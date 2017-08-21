@@ -1,0 +1,12 @@
+---
+instances: 1
+memory: 1G
+applications:
+  - name: zipkindemo
+    path: target/pcfdemo-0.0.1-SNAPSHOT.jar
+    properties:
+       router:
+         tracing:
+           enable_zipkin: true	
+    env:
+      SPRING_PROFILES_ACTIVE: Development
